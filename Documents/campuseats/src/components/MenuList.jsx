@@ -1,7 +1,12 @@
 
 import MenuItemCard from './MenuItemCard.jsx'
 
-function MenuList({ items, onAdd }) {
+function MenuList({
+  items,
+  onAdd,
+  favourites = [],
+  onToggleFavourite,
+}) {
   if (items.length === 0) {
     return <p>No items on this menu yet.</p>
   }
@@ -13,6 +18,8 @@ function MenuList({ items, onAdd }) {
           key={item.id}
           item={item}
           onAdd={onAdd}
+          isFavourite={favourites.includes(item.id)}
+          onToggleFavourite={onToggleFavourite}
         />
       ))}
     </div>

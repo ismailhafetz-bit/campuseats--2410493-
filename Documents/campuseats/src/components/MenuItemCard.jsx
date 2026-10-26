@@ -1,5 +1,10 @@
 
-function MenuItemCard({ item, onAdd }) {
+function MenuItemCard({
+  item,
+  onAdd,
+  isFavourite,
+  onToggleFavourite,
+}) {
   return (
     <article className="card menu-card">
       <div className="thumb" aria-hidden="true">
@@ -12,6 +17,15 @@ function MenuItemCard({ item, onAdd }) {
       <p className="price">RM {item.price.toFixed(2)}</p>
 
       <button
+        type="button"
+        className="btn"
+        onClick={() => onToggleFavourite(item.id)}
+      >
+        {isFavourite ? '★ Remove favourite' : '☆ Add favourite'}
+      </button>
+
+      <button
+        type="button"
         className="btn"
         disabled={!item.available}
         onClick={() => onAdd(item)}
