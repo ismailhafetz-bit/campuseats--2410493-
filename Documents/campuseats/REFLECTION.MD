@@ -18,4 +18,4 @@ Small components make code easier to understand, maintain and reuse. For example
 
 # week 2 Reflection 
 
-During Week 2, I had difficulty connecting useState, onAdd, and props across App.jsx, MenuList.jsx, and MenuItemCard.jsx. I learned how the selected vendor updates the menu and how clicking Add to cart updates the cart count in Header.jsx. I also encountered an import error with MenuList.jsx and fixed the missing default export. Testing the application helped me understand how to connect components and troubleshoot errors in React.nex
+During Week 2, I had difficulty connecting useState, onAdd, and props across App.jsx, MenuList.jsx, and MenuItemCard.jsx. I learned how the selected vendor updates the menu and how clicking Add to cart updates the cart count in Header.jsx. I also encountered an import error with MenuList.jsx and fixed the missing default export. Testing the application helped me understand how to connect components and troubleshoot errors. 
