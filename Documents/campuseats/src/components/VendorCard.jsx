@@ -1,13 +1,10 @@
-function VendorCard() {
-  const vendor = {
-    name: 'Jazz Coffee',
-    location: 'Mahallah Uthman, Bloc PG Parking Lot',
-    openHours: '6:00 pm - 10:00 pm',
-    isOpen: true,
-  }
 
+function VendorCard({ vendor, onSelect }) {
   return (
-    <article className="card vendor-card">
+    <button
+      className="card vendor-card"
+      onClick={onSelect}
+    >
       <div className="thumb" aria-hidden="true">
         {vendor.name.charAt(0)}
       </div>
@@ -19,7 +16,7 @@ function VendorCard() {
           {vendor.isOpen ? 'Open now' : 'Closed'}
         </span>
       </div>
-    </article>
+    </button>
   )
 }
 

@@ -1,8 +1,8 @@
-function Header() {
-  const cartCount = 0 // becomes state in Part C
 
+function Header({ cartCount }) {
   return (
     <header className="header">
+      <h1>TEST: Main content is visible</h1>
       <h1 className="logo">CampusEats</h1>
       <nav className="nav">
         <a href="#">Vendors</a>
@@ -16,3 +16,4 @@ function Header() {
 }
 
 export default Header
+    
